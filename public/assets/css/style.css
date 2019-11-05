@@ -1,0 +1,172 @@
+@import url(../css/bootstrap.min.css);
+
+#intro {
+    width: 100%;
+    min-height: 115vh;
+    background: white;
+    background-size: cover;
+    position: relative;
+    padding: 32px 0;
+}
+
+#gallery {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 101, 0.6), rgba(217, 200, 95, 0.67));
+    background-size: cover;
+    position: relative;
+}
+
+#intro .intro-text {
+    position: absolute;
+    left: 0;
+    margin-top: 10%; 
+    /* top: 60px; */
+    /* right: 0; */
+    height: calc(50% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.btn-block {
+    width: 40%;
+    box-shadow: 5px 5px 8px #131212;
+}
+
+.greenColor {
+    text-align: center; 
+    background-color: green; 
+    box-shadow: 5px 5px 8px #131212;
+}
+.yellowColor {
+    text-align: center; 
+    background-color: yellow;     
+    box-shadow: 5px 5px 8px #131212;
+}
+
+.redColor {
+    text-align: center; 
+    background-color: red; 
+    box-shadow: 5px 5px 8px #131212;
+}
+
+.purpleColor{
+    text-align: center; 
+    color: #ffffff;
+    background-color: purple; 
+    box-shadow: 5px 5px 8px #131212;
+}
+
+.cyanColor{
+    text-align: center; 
+    background-color: cyan; 
+    box-shadow: 5px 5px 8px #131212;
+}
+
+.violetColor{
+    text-align: center; 
+    background-color: violet; 
+    box-shadow: 5px 5px 8px #131212;
+}
+
+/* Essence Button */
+.amado-btn {
+    display: inline-block;
+    min-width: 160px;
+    height: 55px;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 0 7px;
+    font-size: 18px;
+    line-height: 56px;
+    background-color: #526464;
+    font-weight: 400; }
+    .amado-btn.active, .amado-btn:hover, .amado-btn:focus {
+      font-size: 18px;
+      color: #ffffff;
+      background-color: #131212; 
+}
+
+.green-btn {
+    color: #ffffff !important;
+    background-color: green !important;
+}
+    .green-btn.active, .green-btn:hover, .green-btn:focus {
+      color: green !important;
+      background-color: #131212 !important; 
+}
+
+.yellow-btn {
+    color: #131212 !important;
+    background-color: yellow !important;
+}
+    .yellow-btn.active, .yellow-btn:hover, .yellow-btn:focus {
+      color: yellow !important;
+      background-color: #131212 !important; 
+}
+
+.red-btn {
+    color: #ffffff !important;
+    background-color: red !important;
+}
+    .red-btn.active, .red-btn:hover, .red-btn:focus {
+      color: red !important;
+      background-color: #131212 !important; 
+}
+
+.purple-btn {
+    color: #ffffff !important;
+    background-color: purple !important;
+}
+    .purple-btn.active, .purple-btn:hover, .purple-btn:focus {
+      color: purple !important;
+      background-color: #131212 !important; 
+}
+
+.cyan-btn {
+    color: #131212 !important;
+    background-color: cyan !important;
+}
+    .cyan-btn.active, .cyan-btn:hover, .cyan-btn:focus {
+      color: cyan !important;
+      background-color: #131212 !important; 
+}
+
+.violet-btn {
+    color: #ffffff !important;
+    background-color: violet !important;
+}
+    .violet-btn.active, .violet-btn:hover, .violet-btn:focus {
+      color: violet !important;
+      background-color: #131212 !important; 
+}
+
+.cardPad {
+    margin: 8px;
+}
+
+.logoBorder {
+    padding: 20px;
+}
+
+.khet {
+    /* border: 2px solid black;
+    padding: 8px;
+    border-radius: 20px; */
+    margin-top: 210px;
+}
+
+.khet-2{
+    border-radius: 15px;
+    background-color: #55ca55;
+    padding: 5px;
+}
+
+.cat-head {
+    border: 2px solid black;
+    margin: 10px;
+}

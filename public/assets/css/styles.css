@@ -1,0 +1,36 @@
+.btn-circle.btn-xl {
+    width: 170px;
+    height: 170px;
+    padding: 45px 16px;
+    border-radius: 85px;
+    font-size: 34px;
+    line-height: 1.33;
+    border: 2px solid black;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.btn-text{
+    font-size: 34px;
+    color: white;
+    -webkit-text-stroke: .5px white;
+    font-weight: bold;
+}
+
+
+table {
+    /* border-collapse: collapse; */
+    width: 100%;
+  }
+  
+  /* table, th, td {
+    border: 1px solid black;
+  } */
