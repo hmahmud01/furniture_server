@@ -44,7 +44,6 @@ class GalleryController extends Controller
                 $galary->image = '/image/'.$name;
                 $galary->cat_name = $request->cat_name;
                 $galary->save();
-
             }
         }        
 
@@ -68,7 +67,16 @@ class GalleryController extends Controller
      */
     public function show($id)
     {
-        //
+        
+        $images = gallery::where('cat_name',$id)->get();
+        $data = [
+            'name'  => $id,
+            'images'   => $images            
+        ];
+        // return $id;
+        // return $images;        
+        // $images = gallery::all();
+        return view('gallery.category', compact('data'));
     }
 
     /**

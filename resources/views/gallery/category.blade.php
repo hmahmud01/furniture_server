@@ -5,8 +5,6 @@
 <div class="col-sm-12">
     <div>
         <a style="margin: 19px;" href="{{ route('gallery.create')}}" class="btn btn-primary">New contact</a>
-        <a style="margin: 19px;" href="{{ route('gallery.show', 'catval2')}}" class="btn btn-primary">val</a>        
-        <a style="margin: 19px;" href="{{ route('gallery.show', 'catval1')}}" class="btn btn-primary">val1</a>        
     </div>  
 
   @if(session()->get('success'))
@@ -16,7 +14,7 @@
   @endif
 </div>
 <div class="col-sm-12">
-    <h1 class="display-3">Images</h1>    
+<h1 class="display-3">Images For {{ $data['name'] }}</h1>    
   <table class="table table-striped">
     <thead>
         <tr>
@@ -26,7 +24,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($images as $image)
+        @foreach($data['images'] as $image)
         <tr>
             <td>{{$image->cat_name}}</td>
             {{-- <td>{{$image->image}} </td> --}}
