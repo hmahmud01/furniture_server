@@ -15,7 +15,8 @@ class GalleryController extends Controller
     public function index()
     {
         $images = gallery::all();
-        return view('gallery.index', compact('images'));
+        // return view('gallery.index', compact('images'));
+        return view('site.gallery', compact('images'));
     }
 
     /**
@@ -43,6 +44,7 @@ class GalleryController extends Controller
                 $file->move('image',$name);
                 $galary->image = '/image/'.$name;
                 $galary->cat_name = $request->cat_name;
+                $galary->title = $request->title;
                 $galary->save();
             }
         }        
@@ -73,10 +75,8 @@ class GalleryController extends Controller
             'name'  => $id,
             'images'   => $images            
         ];
-        // return $id;
-        // return $images;        
-        // $images = gallery::all();
-        return view('gallery.category', compact('data'));
+        // return view('gallery.category', compact('data'));
+        return view('site.gallery-category', compact('data'));
     }
 
     /**

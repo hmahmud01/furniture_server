@@ -15,22 +15,41 @@
       </div><br />
     @endif
       <form  method="post" action="{{ route('gallery.store') }}" enctype="multipart/form-data">
-           {{csrf_field()}}
+          {{csrf_field()}}
             <div class="form-group">
                 <label for="cat_name">category</label>
                 <select class="form-control" id="cat_name" name="cat_name">
-                    <option value="catval1">cat1</option>
-                    <option value="catval2">cat2</option>
-                    <option value="catval3">cat3</option>                
+                    <option value="bedroom">bedroom</option>
+                    <option value="diningroom">diningroom</option>
+                    <option value="livingroom">livingroom</option>                
+                    <option value="varieties">varieties</option>                
+                    <option value="bed">bed</option>   
+                    <option value="sofa">sofa</option>   
+                    <option value="dining">dining</option>   
+                    <option value="mattress">mattress</option>   
+                    <option value="bedonly">bedonly</option>   
+                    <option value="coffee">coffee</option>   
+                    <option value="chairs">chairs</option>   
+                    <option value="lamps">lamps</option>  
+                    <option value="children">children</option>  
+                    <option value="tv">tv</option>  
+                    <option value="tables">tables</option>  
+                    <option value="decorations">decorations</option>  
+                    <option value="pictures">pictures</option> 
+                    <option value="rugs">rugs</option> 
+                    <option value="buffets">buffets</option> 
+                    <option value="varieties">varieties</option> 
+                    <option value="toronto">toronto</option> 
                 </select>
             </div>
-            {{-- <div class="form-group">
-                <label for="image">Image</label>
-                <input type="file" class="form-control" name="image" id="image" placeholder="Images">
-            </div> --}}
             <div class="form-group">
-                 <input  type="file" class="form-control" name="images[]" placeholder="Upload" multiple >
+                <label for="title">Image Title</label>
+                <input class="form-control" name="title" id="title" placeholder="Image Title">
             </div>
+            <div class="form-group">
+                <input  type="file" class="form-control" name="images[]" placeholder="Upload" multiple >
+            </div>
+
             <button type="submit" class="btn btn-primary-outline">Add to gallery</button>
       </form>
   </div>

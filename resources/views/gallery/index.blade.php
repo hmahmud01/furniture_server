@@ -22,6 +22,7 @@
         <tr>
           <td>Category Name</td>
           <td>Image</td>
+          <td>Title</td>
           <td>Actions</td>
         </tr>
     </thead>
@@ -31,6 +32,7 @@
             <td>{{$image->cat_name}}</td>
             {{-- <td>{{$image->image}} </td> --}}
             <td><img style="height:64px; width:64px;" src="{{ asset($image->image) }}" /></td>
+            <td>{{$image->title}}</td>
             <td>
                 <form action="{{ route('gallery.destroy', $image->id)}}" method="post">
                   @csrf

@@ -8,7 +8,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"
      integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Upload Panel For Furniture FM Website</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,39 +21,16 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
         <div class="container">
-            <a class="navbar-brand" href="/">Logo</a>
+            <a class="navbar-brand" href="/">Furniture FM</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
                 <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle"
-                            data-toggle="dropdown" id="navbarDropdownMenuLink">Your Ideas</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Ideas</a>
-                                <a href="#" class="dropdown-item">Add</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                        <a href="#" class="nav-link">Logout</a>
+                    <li class="nav-item">
+                    <a href="{{url('/')}}" class="nav-link">Logout</a>
                     </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Register</a>
-                        </li>
                 </ul>
             </div>
         </div>

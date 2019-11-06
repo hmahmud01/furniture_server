@@ -8,6 +8,7 @@ class gallery extends Model
 {
     protected $fillable = [
         'cat_name',
-        'image'
+        'image',
+        'title'
     ];
 }

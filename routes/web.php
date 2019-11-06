@@ -15,4 +15,13 @@ Route::get('/', function () {
     return view('site/index');
 });
 
+Route::get('categories', function () {
+    return view('site.category');
+});
+
+Route::get('about-us', function () {
+    return view('site.about-us');
+});
+
+
 Route::resource('gallery', 'GalleryController');
