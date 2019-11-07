@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\gallery;
 use Illuminate\Http\Request;
 
-class GalleryController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,7 @@ class GalleryController extends Controller
     public function index()
     {
         $images = gallery::all();
-        // return view('gallery.index', compact('images'));
-        return view('site.gallery', compact('images'));
+        return view('gallery.list', compact('images'));       
     }
 
     /**
@@ -37,18 +36,18 @@ class GalleryController extends Controller
      */
     public function store(Request $request)
     {
-        if($files=$request->file('images')){
-            foreach($files as $file){
-                $galary = new gallery();
-                $name=$file->getClientOriginalName();
-                $file->move('image',$name);
-                $galary->image = '/image/'.$name;
-                $galary->cat_name = $request->cat_name;
-                $galary->title = $request->title;
-                $galary->save();
+            if($files=$request->file('images')){
+                foreach($files as $file){
+                    $galary = new gallery();
+                    $name=$file->getClientOriginalName();
+                    $file->move('image',$name);
+                    $galary->image = '/image/'.$name;
+                    $galary->cat_name = $request->cat_name;
+                    $galary->title = $request->title;
+                    $galary->save();
+                }
             }
-        }
-        return redirect('/gallery')->with('success', 'category saved!');
+            return redirect('/admin')->with('success', 'category saved!');
     }
 
     /**
@@ -59,14 +58,7 @@ class GalleryController extends Controller
      */
     public function show($id)
     {
-        
-        $images = gallery::where('cat_name',$id)->get();
-        $data = [
-            'name'  => $id,
-            'images'   => $images            
-        ];
-        // return view('gallery.category', compact('data'));
-        return view('site.gallery-category', compact('data'));
+        //
     }
 
     /**
@@ -103,6 +95,6 @@ class GalleryController extends Controller
         $image = gallery::find($id);
         $image->delete();
 
-        return redirect('/gallery')->with('success', 'Contact deleted!');
+        return redirect('/admin')->with('success', 'Contact deleted!');
     }
 }

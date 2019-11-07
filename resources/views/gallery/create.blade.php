@@ -14,7 +14,7 @@
         </ul>
       </div><br />
     @endif
-      <form  method="post" action="{{ route('gallery.store') }}" enctype="multipart/form-data">
+      <form  method="post" action="{{ route('admin.store') }}" enctype="multipart/form-data">
           {{csrf_field()}}
             <div class="form-group">
                 <label for="cat_name">category</label>

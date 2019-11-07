@@ -20,11 +20,20 @@
 
 </head>
 
-<body>
+<body style="background-color:#f0f05f;">
 
     <section id="gallery">
         <div class="container">
             <div class="row">
+                <h3>
+                    @if ($data['name'] === "bedroom")
+                        Bedroom Section
+                    @elseif ($data['name'] === "varieties")
+                        Varieties
+                    @else
+                        Somemthing
+                    @endif
+                </h3>
                 <p>
                     A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
                 </p>
@@ -33,7 +42,7 @@
                 @foreach($data['images'] as $image)
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="{{ asset($image->image) }}" class="card-img-top">
+                        <img src="{{ asset($image->image) }}" class="card-img-top" style="height: 120px;">
                         <div class="card-body">
                             <h5 class="card-title">{{$image->cat_name}}</h5>
                             {{-- <a href="#" class="btn btn-primary">Add to Cart</a> --}}

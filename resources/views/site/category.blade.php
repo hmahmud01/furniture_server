@@ -26,7 +26,7 @@
     <section id="intro">
         <div class="row">
             <div class="col-md-4 offset-md-4">
-                <img class="logoBorder" src="{{asset('assets/img/home/logo.png')}}" style="margin-top:20px;" alt="Furniture FM logo" />
+                <a href="{{url('/')}}"><img class="logoBorder" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /></a>
                 
                 <!-- <h3 style="text-align:center;"></h3> -->
             </div>
@@ -102,6 +102,7 @@
             </div>
 
             <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-warning" style="width:100%; margin: 5px; color: red;">TORONTO FURNITURE STORES' SPECIAL OFFERS</a>
+            <a href="{{ route('gallery.index')}}" class="btn btn-lg btn-block btn-warning" style="width:100%; margin: 5px; color: red;">All Furniture</a>
 
             <!-- style of row was [style="margin-top: 32px; border: 2px solid blue;"] -->
             <div class="row" style="margin-top: 32px; border: 1px solid gray;">

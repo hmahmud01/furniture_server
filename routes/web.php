@@ -25,3 +25,4 @@ Route::get('about-us', function () {
 
 
 Route::resource('gallery', 'GalleryController');
+Route::resource('admin', 'AdminController');
