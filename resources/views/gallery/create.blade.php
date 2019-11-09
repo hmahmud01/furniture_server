@@ -44,7 +44,7 @@
             </div>
             <div class="form-group">
                 <label for="title">Image Title</label>
-                <input class="form-control" name="title" id="title" placeholder="Image Title">
+                <input class="form-control" name="title" id="title" placeholder="Image Title" required>
             </div>
             <div class="form-group">
                 <input  type="file" class="form-control" name="images[]" placeholder="Upload" multiple >

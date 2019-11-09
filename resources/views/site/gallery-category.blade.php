@@ -28,10 +28,48 @@
                 <h3>
                     @if ($data['name'] === "bedroom")
                         Bedroom Section
+                    @elseif ($data['name'] === "diningroom")
+                        Dining Room Section
+                    @elseif ($data['name'] === "livingroom")
+                        Living Room Section
+                    @elseif ($data['name'] === "varieties")
+                        Varieties Section
+                    @elseif ($data['name'] === "bed")
+                        Bed Section
+                    @elseif ($data['name'] === "sofa")
+                        Sofa Section
+                    @elseif ($data['name'] === "dining")
+                        Dining Sets
+                    @elseif ($data['name'] === "mattress")
+                        Matteress
+                    @elseif ($data['name'] === "bedonly")
+                        Bed Only All Size
+                    @elseif ($data['name'] === "coffee")
+                        Coffee Tables
+                    @elseif ($data['name'] === "chairs")
+                        Chairs Only
+                    @elseif ($data['name'] === "lamps")
+                        Lamps
+                    @elseif ($data['name'] === "children")
+                        Children Section
+                    @elseif ($data['name'] === "tv")
+                        TV Stands
+                    @elseif ($data['name'] === "tables")
+                        Tables Only
+                    @elseif ($data['name'] === "decorations")
+                        Decorations
+                    @elseif ($data['name'] === "pictures")
+                        Pictures
+                    @elseif ($data['name'] === "rugs")
+                        Rugs
+                    @elseif ($data['name'] === "buffets")
+                        Buffets && Servers
                     @elseif ($data['name'] === "varieties")
                         Varieties
+                    @elseif ($data['name'] === "toronto")
+                        Toronto Furniture Stores Special Offers
                     @else
-                        Somemthing
+                        All Products
                     @endif
                 </h3>
                 <p>
@@ -42,7 +80,7 @@
                 @foreach($data['images'] as $image)
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="{{ asset($image->image) }}" class="card-img-top" style="height: 120px;">
+                        <a href="{{ asset($image->image) }}"><img src="{{ asset($image->image) }}" class="card-img-top" style="height: 240px;"></a>
                         <div class="card-body">
                             <h5 class="card-title">{{$image->cat_name}}</h5>
                             {{-- <a href="#" class="btn btn-primary">Add to Cart</a> --}}

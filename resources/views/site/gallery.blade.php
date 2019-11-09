@@ -34,7 +34,7 @@
                 @foreach($images as $image)
                     <div class="col-md-3">
                         <div class="card" style="margin: 10px 0;">
-                            <img src="{{ asset($image->image) }}" class="card-img-top" style="height:120px">
+                            <a href="{{ asset($image->image) }}"><img src="{{ asset($image->image) }}" class="card-img-top" style="height: 240px;"></a>
                             <div class="card-body">
                                 <h5 class="card-title">{{$image->title}}</h5>
                                 <p>{{$image->cat_name}}</p>
