@@ -40,6 +40,7 @@
                     <option value="buffets">buffets</option> 
                     <option value="varieties">varieties</option> 
                     <option value="toronto">toronto</option> 
+                    <option value="gta">GTA  Furniture Stores’ Special OFFERS</option> 
                 </select>
             </div>
             <div class="form-group">

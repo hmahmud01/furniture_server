@@ -37,19 +37,19 @@
                         <h4 class="khet-2">Delivery & Setup</h4>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mob-home-c-1">
                     <a href="{{url('/')}}"><img class="logoBorder" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /></a>
-                    <h3>An Online Furniture DISCOUNT Library</h3>
+                    <h3>An Online Furniture Coupon Flyers Website</h3>
                     <h4 class="khet-2">100+ Furniture Dealers</h4>                     
-                    <a href="{{ url('/categories') }}" class="btn btn-dark btn-circle btn-xl" style="margin:18px 0;">
+                    <a href="{{ url('/categories') }}" class="enter-btn btn btn-danger btn-circle btn-xl">
                         <p class="btn-text">ENTER</p>
                     </a>
-                    <h4 class="khet-2">Lowest Price With Maximum Benefits</h4>
-                    <a href="{{ url('/about-us') }}" class="btn btn-info" style="margin:18px 0;">
+                    <h4 class="khet-2 mob-home-c-2">Lowest Price With Maximum Benefits</h4>
+                    <a href="{{ url('/about-us') }}" class="about-btn btn btn-info">
                         About Us
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mob-home-c-3">
                     <div class="khet">
                         <h4 class="khet-2">All Major Brands</h4>
                         <h4 class="khet-2">Negotiation Assistance</h4>                        

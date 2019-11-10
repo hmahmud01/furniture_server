@@ -41,7 +41,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <a href="{{ route('gallery.show', 'bedroom')}}" class="btn btn-warning" style="width:100%; color: red;">
+                    <a href="{{ route('gallery.show', 'bedroom')}}" class="btn btn-warning btn-space" style="width:100%; color: red;">
                         BEDROOM SECTION
                     </a>
                 </div>
@@ -53,7 +53,7 @@
             </div>
             <div class="row" style="margin-top: 10px">
                 <div class="col-md-6">
-                    <a href="{{ route('gallery.show', 'diningroom')}}" class="btn btn-warning" style="width:100%; color: red;">
+                    <a href="{{ route('gallery.show', 'diningroom')}}" class="btn btn-warning btn-space" style="width:100%; color: red;">
                         DINING ROOM SECTION
                     </a>
                 </div>
@@ -115,13 +115,22 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                            <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/1.jpg')}}" alt="First slide" style="height: 400px; width:900px !important; margin: auto;">
+                                <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/1.jpg')}}" alt="First slide" style="height: 400px; width:900px !important; margin: auto;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="{{ route('gallery.show', 'gta')}}"><h5>GTA  Furniture Stores’ Special OFFERS </h5></a>
+                                </div>
                             </div>
                             <div class="carousel-item">
-                            <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/2.jpg')}}" alt="Second slide" style="height: 400px; width:900px !important; margin: auto;">
+                                <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/2.jpg')}}" alt="Second slide" style="height: 400px; width:900px !important; margin: auto;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="{{ route('gallery.show', 'gta')}}"><h5>GTA  Furniture Stores’ Special OFFERS </h5></a>
+                                </div>
                             </div>
                             <div class="carousel-item">
-                            <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/3.jpg')}}" alt="Third slide" style="height: 400px; width:900px !important; margin: auto;">
+                                <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/3.jpg')}}" alt="Third slide" style="height: 400px; width:900px !important; margin: auto;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="{{ route('gallery.show', 'gta')}}"><h5>GTA  Furniture Stores’ Special OFFERS </h5></a>
+                                </div>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

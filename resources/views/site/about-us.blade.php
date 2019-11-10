@@ -25,7 +25,7 @@
 
     <section id="gallery">
         <div class="container">
-            <div class="row">
+            <div class="row gallery-content">
                 <h3>About Us</h3>                
                 <ul>
                     <li>FurnitureFM.com Does not directly sells furnitures to the consumers, it  only encourages customers to visit the stores, practically see or discuss the products with established retailers through its own marketing plan . </li>

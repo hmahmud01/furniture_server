@@ -24,7 +24,7 @@
 
     <section id="gallery">
         <div class="container">
-            <div class="row">
+            <div class="row gallery-content">
                 <h3>
                     @if ($data['name'] === "bedroom")
                         Bedroom Section
@@ -68,6 +68,8 @@
                         Varieties
                     @elseif ($data['name'] === "toronto")
                         Toronto Furniture Stores Special Offers
+                    @elseif ($data['name'] === "gta")
+                        GTA  Furniture Stores’ Special OFFERS
                     @else
                         All Products
                     @endif
