@@ -41,11 +41,11 @@
                     <a href="{{url('/')}}"><img class="logoBorder" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /></a>
                     <h3>An Online Furniture Coupon Flyers Website</h3>
                     <h4 class="khet-2">100+ Furniture Dealers</h4>                     
-                    <a href="{{ url('/categories') }}" class="enter-btn btn btn-danger btn-circle btn-xl">
+                    <a href="{{ url('/categories') }}" class="enter-btn btn enter-btn-color btn-circle btn-xl">
                         <p class="btn-text">ENTER</p>
                     </a>
                     <h4 class="khet-2 mob-home-c-2">Lowest Price With Maximum Benefits</h4>
-                    <a href="{{ url('/about-us') }}" class="about-btn btn btn-info">
+                    <a href="{{ url('/about-us') }}" class="about-btn btn btn-info btn-lg">
                         About Us
                     </a>
                 </div>

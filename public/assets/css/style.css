@@ -146,6 +146,16 @@
       background-color: #131212 !important; 
 }
 
+.enter-btn-color{
+    color: #fff;
+    background-color: #FE0500;
+}
+
+.enter-btn-color:hover, .enter-btn-color:focus{
+    color: #fff;
+    background-color: rgb(212, 4, 0);
+}
+
 .enter-btn{
     margin: 18px 0;
 }
@@ -177,6 +187,11 @@
 .cat-head {
     border: 2px solid black;
     margin: 10px;
+}
+
+.cart-img{
+    height: 200px;
+    width: 200px;
 }
 
 @media only screen and (min-width: 340px) and (max-width: 420px) {

@@ -74,6 +74,10 @@
                         All Products
                     @endif
                 </h3>
+                <div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+                    <button class="clear-cart btn btn-danger">Clear Cart</button>
+                </div>
                 <p>
                     A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
                 </p>
@@ -85,7 +89,7 @@
                         <a href="{{ asset($image->image) }}"><img src="{{ asset($image->image) }}" class="card-img-top" style="height: 240px;"></a>
                         <div class="card-body">
                             <h5 class="card-title">{{$image->cat_name}}</h5>
-                            {{-- <a href="#" class="btn btn-primary">Add to Cart</a> --}}
+                            <a href="#" data-name="{{$image->title}}" data-price="0.5" data-img="{{ asset($image->image) }}" class="add-to-cart btn btn-primary">Add to List</a>
                         </div>
                     </div>
                 </div>  
@@ -94,11 +98,35 @@
         </div>
     </section><!-- #intro -->
 
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table">
+                
+              </table>
+              <!-- <div>Total price: $<span class="total-cart"></span></div> -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Order now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <script src="{{ asset('assets/js/jquery/jquery-2.2.4.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins.js') }}"></script>
     <script src="{{ asset('assets/js/active.js') }}"></script>
+    <script src="{{ asset('assets/js/scriptfm.js') }}"></script>
 
 </body>
 

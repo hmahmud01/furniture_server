@@ -102,7 +102,7 @@
             </div>
 
             <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-warning" style="width:100%; margin: 5px; color: red;">TORONTO FURNITURE STORES' SPECIAL OFFERS</a>
-            <a href="{{ route('gallery.index')}}" class="btn btn-lg btn-block btn-warning" style="width:100%; margin: 5px; color: red;">All Furniture</a>
+            <a href="{{ route('gallery.index')}}" class="btn btn-lg btn-block btn-warning" style="width:100%; margin: 5px; color: red;">All Furniture Flyers</a>
 
             <!-- style of row was [style="margin-top: 32px; border: 2px solid blue;"] -->
             <div class="row" style="margin-top: 32px; border: 1px solid gray;">
