@@ -25,13 +25,17 @@
     <section id="gallery">
         <div class="container">
             <div class="row gallery-content">
+              <div class="col-md-9">
                 <h3>All Furniters</h3>
+              </div>
+              <div class="col-md-3">
                 <div>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
                     <button class="clear-cart btn btn-danger">Clear Cart</button>
                 </div>
+              </div>
                 <p>
-                    A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
+                  FurnitureFM.com <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> Coupon Flyer Deals are mostly designed with actual floor samples photos available at the stores and the  similar warehouse stocks . Please always check  products availability before going to the stores by using coupons Code ( mentioned with the store name ). Sometimes stores offer great instant discounts for serious buyers only . Present FurnitureFM.com (logo) coupons photos or codes once the product are determined to buy. FurnitureFM.com (logo) also offers special buying assistant service for large buying , complete house package , special items, brand products in order to save more money, proper products suggestions and pre negotiations with multiple stores for 1% service fee of total purchase amount .Our basic assistant service  "Connecting with the stores " is free basic consulting service via email only at  ➡️" helpfurniturefm@gmail.com" .
                 </p>
             </div>
             <div class="row">
