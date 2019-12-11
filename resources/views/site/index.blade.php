@@ -45,7 +45,7 @@
                         <p class="btn-text">ENTER</p>
                     </a>
                     <h4 class="khet-2 mob-home-c-2">Lowest Price With Maximum Benefits</h4>
-                    <a href="{{ url('/about-us') }}" class="about-btn btn btn-info btn-lg">
+                    <a href="{{ url('/about-us') }}" class="enter-btn btn enter-btn-color btn btn-lg">
                         About Us
                     </a>
                 </div>

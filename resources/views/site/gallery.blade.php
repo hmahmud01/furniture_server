@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row gallery-content">
               <div class="col-md-9">
-                <h3>All Furniters</h3>
+                <h3>All Furnitures</h3>
               </div>
               <div class="col-md-3">
                 <div>
@@ -35,7 +35,7 @@
                 </div>
               </div>
                 <p>
-                  FurnitureFM.com <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> Coupon Flyer Deals are mostly designed with actual floor samples photos available at the stores and the  similar warehouse stocks . Please always check  products availability before going to the stores by using coupons Code ( mentioned with the store name ). Sometimes stores offer great instant discounts for serious buyers only . Present FurnitureFM.com (logo) coupons photos or codes once the product are determined to buy. FurnitureFM.com (logo) also offers special buying assistant service for large buying , complete house package , special items, brand products in order to save more money, proper products suggestions and pre negotiations with multiple stores for 1% service fee of total purchase amount .Our basic assistant service  "Connecting with the stores " is free basic consulting service via email only at  ➡️" helpfurniturefm@gmail.com" .
+                  <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> Coupon Flyer Deals are mostly designed with actual floor samples photos available at the stores and the  similar warehouse stocks . Please always check  products availability before going to the stores by using coupons Code ( mentioned with the store name ). Sometimes stores offer great instant discounts for serious buyers only . Present <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> coupons photos or codes once the product are determined to buy. <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> also offers special buying assistant service for large buying , complete house package , special items, brand products in order to save more money, proper products suggestions and pre negotiations with multiple stores for 1% service fee of total purchase amount .Our basic assistant service  "Connecting with the stores " is free basic consulting service via email only at  ➡️" helpfurniturefm@gmail.com" .
                 </p>
             </div>
             <div class="row">
@@ -73,7 +73,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Order now</button>
+          <button type="button" class="btn btn-primary">Review now</button>
         </div>
       </div>
     </div>

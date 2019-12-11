@@ -137,13 +137,13 @@
       background-color: #131212 !important; 
 }
 
-.violet-btn {
-    color: #ffffff !important;
-    background-color: violet !important;
+.purple-btn {
+    /* color: #ffffff !important; */
+    background-color: purple !important;
 }
-    .violet-btn.active, .violet-btn:hover, .violet-btn:focus {
-      color: violet !important;
-      background-color: #131212 !important; 
+    .purple-btn.active, .purple-btn:hover, .purple-btn:focus {
+      color: white !important;
+      background-color: rgb(107, 1, 107) !important; 
 }
 
 .enter-btn-color{
@@ -162,8 +162,11 @@
 
 .about-btn {
     margin: 18px 0;
-    color: yellow;
+    color: #55CA55;
+    background-color: #FFFF00;
+    border-color: rgba(255, 255, 0, 0.801);
 }
+
 .cardPad {
     margin: 8px;
 }
@@ -249,6 +252,11 @@
         position: relative;
         margin: 290px 0 0 0;
         z-index: 1;
+    }
+
+    .about-color{
+        background-color: #FFFF00;
+        border-color: rgba(255, 255, 0, 0.801);
     }
 
     .gallery-content{

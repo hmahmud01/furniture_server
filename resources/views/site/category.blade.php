@@ -62,7 +62,40 @@
                 </div>
             </div>
 
-            <div class="row"style="margin-top: 32px">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="{{ route('gallery.index')}}" class="btn btn-lg btn-block enter-btn-color" style="width:100%; margin: 5px 0; height:82px; font-size: xx-large">Deal of the Month</a>
+                </div>            
+            </div>
+
+            <div class="row" style="margin-top: 32px">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="cat-head">
+                            <h1>Canada-wide Furniture Stores’ Deals</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-danger" style="width:100%; margin: 5px;">GTA</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Southwestern Ontario</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Montreal & Quebec</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Eastern Ontario</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Ottawa</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Northern Ontario</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="row" style="margin-top: 32px">
                 <div class="col-md-12 text-center">
                     <div class="col-md-6 offset-md-3">
                         <div class="cat-head">
@@ -99,8 +132,173 @@
                 </div>
             </div>
 
+            <div class="row" style="margin-top: 32px">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="cat-head">
+                            <h1>Bed section</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-primary" style="width:100%; margin: 5px;"> All Sizes Beds only</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-primary" style="width:100%; margin: 5px;">Low Budget Sets</a>
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-primary" style="width:100%; margin: 5px;">Comfort Budget Sets</a>   
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-primary" style="width:100%; margin: 5px;">Luxury Budget  Sets</a>   
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-primary" style="width:100%; margin: 5px;">Children/ Youth Sets</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-primary" style="width:100%; margin: 5px;">Bunk Beds</a>
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-primary" style="width:100%; margin: 5px;">Trundle/ Day beds</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-primary" style="width:100%; margin: 5px;">Headboards & Frames</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 32px">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="cat-head">
+                            <h1>Mattress Section</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-warning" style="width:100%; margin: 5px;"> Economic Budget Mattress</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-warning" style="width:100%; margin: 5px;">Comfort Budget Mattress</a>                            
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-warning" style="width:100%; margin: 5px;">Luxury Mattress</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-warning" style="width:100%; margin: 5px;">Pillows,Comforters, Bedsheets</a>                            
+                        </div>
+                        <div class="col-md-12">                            
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-warning" style="width:100%; margin: 5px;">Mattress Protectors</a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 32px">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="cat-head">
+                            <h1>Dining Section</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-info" style="width:100%; margin: 5px;"> Small Dinettes</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-info" style="width:100%; margin: 5px;">Medium Size Dining sets</a> 
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-info" style="width:100%; margin: 5px;"> Glass top Dining sets</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-info" style="width:100%; margin: 5px;">Canadian Made sets</a>                                                       
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-info" style="width:100%; margin: 5px;">Luxury Traditional sets</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-info" style="width:100%; margin: 5px;">Luxury Modern Sets</a>                            
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-info" style="width:100%; margin: 5px;"> Pub height sets</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-info" style="width:100%; margin: 5px;">Tables only</a>                            
+                        </div>
+                        <div class="col-md-4">                            
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-info" style="width:100%; margin: 5px;">Chairs only</a>                                                        
+                        </div>
+                        <div class="col-md-4">                            
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-info" style="width:100%; margin: 5px;">Curio, Servers, Hutch Buffet</a>                                                                              
+                        </div>
+                        <div class="col-md-4">                            
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-info" style="width:100%; margin: 5px;">Dining Accessories</a>                                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 32px">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="cat-head">
+                            <h1>Varieties Section</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-danger" style="width:100%; margin: 5px;"> Armoire/Chest/Wardrobe</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Ottomans</a> 
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-danger" style="width:100%; margin: 5px;"> Benches</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Bookshelves</a>                                                       
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Study desk</a> 
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Study/Computer chairs</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Rocking chairs</a>                            
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-danger" style="width:100%; margin: 5px;"> Accent Chairs</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Decoration Accessories</a>                            
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-danger" style="width:100%; margin: 5px;">Furniture Care products</a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 32px">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="cat-head">
+                            <h1>Living Room Section</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-success" style="width:100%; margin: 5px;"> Canadian Made Fabric Sets</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">Canadian Made Leather Sets</a> 
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-success" style="width:100%; margin: 5px;"> Sectional Sofa Sets</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">Traditional Sofa Sets</a>                                                       
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-success" style="width:100%; margin: 5px;">Recliner Sofa Sets</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">Modern Sofa Sets</a>                            
+                            <a href="{{ route('gallery.show', 'bed')}}" class="btn btn-success" style="width:100%; margin: 5px;"> Sofa beds, Futons, Klick Klack</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">Coffee Tables</a>                            
+                        </div>
+                        <div class="col-md-4">                            
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">Console/ Hall tables</a>                                                        
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">TV stands/ Entertainment Units</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">Rugs</a>   
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">Lamps/lightings</a>   
+                        </div>
+                        <div class="col-md-6">                            
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">Wall Mirrors</a>                                                                              
+                        </div>
+                        <div class="col-md-6">                            
+                            <a href="{{ route('gallery.show', 'bedonly')}}" class="btn btn-success" style="width:100%; margin: 5px;">Picture/ Arts</a>                                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-info" style="width:100%; margin: 5px; color: yellow; height: 72px; font-size: xx-large;">TORONTO FURNITURE STORES' SPECIAL OFFERS</a>
-            <a href="{{ route('gallery.index')}}" class="btn btn-lg btn-block btn-warning" style="width:100%; margin: 5px; color: blue; height:82px; font-size: xx-large">Deal of the Month</a>
+
+            <div class="row" style="margin-top: 32px">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="cat-head">
+                            <h1>FurnitureFM.com Members Only</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-primary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Realtors Zone</a>
+                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-secondary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Designers Zone</a>
+                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block purple-btn" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Agents Zone</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 
             <!-- style of row was [style="margin-top: 32px; border: 2px solid blue;"] -->
             <div class="row" style="margin-top: 32px; border: 1px solid gray;">
@@ -113,26 +311,26 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/1.jpg')}}" alt="First slide" style="height: 400px; width:900px !important; margin: auto;">
+                                <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/slide1.jpg')}}" alt="First slide" style="height: 400px; width:900px !important; margin: auto;">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <a href="{{ route('gallery.show', 'gta')}}"><h5>GTA  Furniture Stores’ Special OFFERS </h5></a>
+                                    <!-- <a href="{{ route('gallery.show', 'gta')}}"><h5>GTA  Furniture Stores’ Special OFFERS </h5></a> -->
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/2.jpg')}}" alt="Second slide" style="height: 400px; width:900px !important; margin: auto;">
+                                <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/slide2.jpg')}}" alt="Second slide" style="height: 400px; width:900px !important; margin: auto;">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <a href="{{ route('gallery.show', 'gta')}}"><h5>GTA  Furniture Stores’ Special OFFERS </h5></a>
+                                    <!-- <a href="{{ route('gallery.show', 'gta')}}"><h5>GTA  Furniture Stores’ Special OFFERS </h5></a> -->
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/3.jpg')}}" alt="Third slide" style="height: 400px; width:900px !important; margin: auto;">
+                                <img class="d-block mx-auto w-100" src="{{asset('assets/img/carousel/slide3.jpg')}}" alt="Third slide" style="height: 400px; width:900px !important; margin: auto;">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <a href="{{ route('gallery.show', 'gta')}}"><h5>GTA  Furniture Stores’ Special OFFERS </h5></a>
+                                    <!-- <a href="{{ route('gallery.show', 'gta')}}"><h5>GTA  Furniture Stores’ Special OFFERS </h5></a> -->
                                 </div>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black"></span>
                             <span class="sr-only">Previous</span>
                         </a>
                         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
