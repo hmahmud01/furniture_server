@@ -77,7 +77,8 @@ class GalleryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $image = gallery::find($id);
+        return view('gallery.edit', compact('image'));
     }
 
     /**
@@ -87,9 +88,35 @@ class GalleryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $galary = gallery::find($id);
+
+        if($files=$request->file('images')){                            
+            $name=$files->getClientOriginalName();
+            $files->move('image',$name);
+            $galary->image = '/image/'.$name;
+            $galary->cat_name = $galary->cat_name;
+            $galary->title = $request->title;
+            $galary->save();
+            
+            return redirect('/gallery')->with('success', 'Image Updated!');
+        }
+    }
+    public function demoupadate(Request $request){
+        $id = $request->id;
+        $galary = gallery::find($id);
+
+        if($files=$request->file('images')){                            
+            $name=$files->getClientOriginalName();
+            $files->move('image',$name);
+            $galary->image = '/image/'.$name;
+            $galary->cat_name = $galary->cat_name;
+            $galary->title = $request->title;
+            $galary->save();
+            
+            return redirect('/gallery')->with('success', 'Image Updated!');
+        }
     }
 
     /**
@@ -103,6 +130,6 @@ class GalleryController extends Controller
         $image = gallery::find($id);
         $image->delete();
 
-        return redirect('/gallery')->with('success', 'Contact deleted!');
+        return redirect('/gallery')->with('success', 'Image deleted!');
     }
 }
