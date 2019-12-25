@@ -37,7 +37,7 @@
 
                 B) FurnitureFM.com doesn’t sell directly to consumers. It only helps consumers to save time, see actual product photos as well as the similar warehouse stocks, recommends consumers to visit the stores and get more discounts if possible by offering our free email assistance  "helpfurniturefm@gmail.com" for basic assistance.<br>
 
-                C) FurnitureFM.com is the first furniture coupon flyers website build with  various furniture dealers and brands  from all over the industries in multiple categories by expert opinion.<br>
+                C) FurnitureFM.com is the first furniture coupons & flyers website build with  various furniture dealers and brands  from all over the industries in multiple categories by expert opinion.<br>
 
                 D) FurnitureFM.com is the first Furniture buying assistant company. Not only it is capable of finding products of consumers budget but also can help consumers to get more discounts from different retailers with proper suggestions in order to avoid disappointments.<br>
 

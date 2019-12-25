@@ -291,10 +291,50 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-primary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Realtors Zone</a>
-                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-secondary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Designers Zone</a>
-                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block purple-btn" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Agents Zone</a>
+                            <a data-toggle="modal" data-target="#passModal" class="btn btn-lg btn-block btn-primary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Realtors Zone</a>
+                            <a data-toggle="modal" data-target="#passModal" class="btn btn-lg btn-block btn-secondary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Designers Zone</a>
+                            <a data-toggle="modal" data-target="#passModal" class="btn btn-lg btn-block purple-btn" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Agents Zone</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 32px">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="cat-head">
+                            <h1>PQS Marketing</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a data-toggle="modal" data-target="#passModal" class="btn btn-lg btn-block enter-btn-color" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Whole Sellers Network</a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="passModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Password</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button id="checkPass" type="button" class="btn btn-primary">Enter</button>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -362,6 +402,16 @@
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins.js') }}"></script>
     <script src="{{ asset('assets/js/active.js') }}"></script>
+
+    <script>
+        $(document).ready(function(){
+            var pass = $("#passwordInput").val();
+            $("#checkPass").click(function(){
+                console.log(pass);
+                window.location = "{{ url('/furniture-member') }}";
+            });
+        });
+    </script>
 
 </body>
 

@@ -23,6 +23,10 @@ Route::get('about-us', function () {
     return view('site.about-us');
 });
 
+Route::get('furniture-member', function(){
+    return view('site.vip');
+});
+
 
 Route::resource('gallery', 'GalleryController');
 Route::resource('admin', 'AdminController');
