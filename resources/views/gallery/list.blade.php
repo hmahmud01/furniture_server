@@ -31,6 +31,9 @@
             <td><img style="height:64px; width:64px;" src="{{ asset($image->image) }}" /></td>
             <td>{{$image->title}}</td>
             <td>
+                <a href="{{ route('gallery.edit', $image->id)}}" class="btn btn-primary">Edit</a>
+            </td>
+            <td>                
                 <form action="{{ route('admin.destroy', $image->id)}}" method="post">
                   @csrf
                   @method('DELETE')

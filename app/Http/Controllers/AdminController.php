@@ -95,6 +95,6 @@ class AdminController extends Controller
         $image = gallery::find($id);
         $image->delete();
 
-        return redirect('/admin')->with('success', 'Contact deleted!');
+        return redirect('/admin')->with('success', 'Image deleted!');
     }
 }
