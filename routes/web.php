@@ -31,3 +31,4 @@ Route::get('furniture-member', function(){
 Route::resource('gallery', 'GalleryController');
 Route::resource('admin', 'AdminController');
 Route::post('adminUpdate', 'GalleryController@demoupadate')->name('galery.update');
+Route::resource('password', 'PasswordController');
