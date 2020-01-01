@@ -35,6 +35,18 @@
                             Living Room Section
                         @elseif ($data['name'] === "varieties")
                             Varieties Section
+                        @elseif ($data['name'] === "gta")
+                            GTA
+                        @elseif ($data['name'] === "shouthwestern")
+                            Southwestern Ontario
+                        @elseif ($data['name'] === "montreal")                        
+                            Montreal & Quebec
+                        @elseif ($data['name'] === "eastern")
+                            Eastern Ontario
+                        @elseif ($data['name'] === "ottawa")
+                            Ottawa
+                        @elseif ($data['name'] === "northern")
+                            Northern Ontario
                         @elseif ($data['name'] === "bed")
                             Bed Section
                         @elseif ($data['name'] === "sofa")
@@ -67,10 +79,120 @@
                             Buffets & Servers
                         @elseif ($data['name'] === "varieties")
                             Varieties
+                        {{-- Bed Section  --}}
+                        @elseif ($data['name'] === "allSizeBed")
+                            All sizes bed
+                        @elseif ($data['name'] === "lowbudgetSets")
+                            Low Budget Sets
+                        @elseif ($data['name'] === "comfortbudgetSets")
+                            Comfort Budget Sets
+                        @elseif ($data['name'] === "luxurybudgetSets")
+                            Luxury Budget Sets
+                        @elseif ($data['name'] === "childrenyouthSets")
+                            Children/ youth Sets
+                        @elseif ($data['name'] === "bunkBeds")
+                            Bunk Beds
+                        @elseif ($data['name'] === "trundlbeds")
+                            Trundle/Day Beds
+                        @elseif ($data['name'] === "headboards")
+                            Headboards & Frames
+                        {{-- Mattress Section to be include --}}
+                        @elseif ($data['name'] === "economicmattress")
+                            Economic Budget Mattress
+                        @elseif ($data['name'] === "comfortmattress")
+                            Comfort Budget Mattress
+                        @elseif ($data['name'] === "luxurymattress")
+                            Luxury Mattress
+                        @elseif ($data['name'] === "pillowComforters")
+                            Pillow, Comforters, Bedsheets
+                        @elseif ($data['name'] === "mattressprotectors")
+                            Mattress Protectors
+                        {{-- Dining Section to be include --}}
+                        @elseif ($data['name'] === "smallDinettes")
+                            Small Dinettes
+                        @elseif ($data['name'] === "mediumsize")
+                            Medium Size Dining sets
+                        @elseif ($data['name'] === "glasstopdining")
+                            Glass top Dining Sets
+                        @elseif ($data['name'] === "canadianmade")
+                            Canadian Made Sets
+                        @elseif ($data['name'] === "luxurytraditional")
+                            Luxury Traditional Sets
+                        @elseif ($data['name'] === "luxuryModern")
+                            Luxury Modern Sets
+                        @elseif ($data['name'] === "pubheight")
+                            Pub Height Sets
+                        @elseif ($data['name'] === "tablesonly")
+                            Tables Only
+                        @elseif ($data['name'] === "chairsonly")
+                            Chairs Only
+                        @elseif ($data['name'] === "curioservers")
+                            Curio, Servers, Hutch Buffet
+                        @elseif ($data['name'] === "diningaccess")
+                            Dining Accessories
+                        {{-- varieties section to be include --}}
+                        @elseif ($data['name'] === "armoirechest")
+                            Armoire/chest/Wardrobe
+                        @elseif ($data['name'] === "ottomans")
+                            Ottomans
+                        @elseif ($data['name'] === "benches")
+                            Benches
+                        @elseif ($data['name'] === "bookshelves")
+                            BookShelves
+                        @elseif ($data['name'] === "studydesk")
+                            Study desk
+                        @elseif ($data['name'] === "studycomputerchair")
+                            Study/Computer chairs
+                        @elseif ($data['name'] === "rockingchair")
+                            Rocking chairs
+                        @elseif ($data['name'] === "accentchair")
+                            Accent chairs
+                        @elseif ($data['name'] === "decorationAccessories")
+                            Decoration Accessories
+                        @elseif ($data['name'] === "furntiturecare")
+                            Furniture Care Products
+                        {{-- Living Romm Section to be incldue --}}
+                        @elseif ($data['name'] === "canadianfabric")
+                            Canadian Made Fabric Sets
+                        @elseif ($data['name'] === "canadianleather")
+                            Canadian Made Leather Sets
+                        @elseif ($data['name'] === "sectionalsofa")
+                            Sectional Sofa Sets
+                        @elseif ($data['name'] === "traditionalsofa")
+                            Tradiational Sofa Sets
+                        @elseif ($data['name'] === "reclinersofa")
+                            Recliner Sofa Sets
+                        @elseif ($data['name'] === "modernsofa")
+                            Modern Sofa Sets
+                        @elseif ($data['name'] === "sofafutonsklick")
+                            Sofa Beds, Futons, Klick Klick
+                        @elseif ($data['name'] === "coffeetables")
+                            Coffee Tables
+                        @elseif ($data['name'] === "consolehall")
+                            Console/Hall Tables
+                        @elseif ($data['name'] === "tvstandsunits")
+                            TV stands/ Entertainment Units
+                        @elseif ($data['name'] === "rugsliving")
+                            Rugs(Living Section)
+                        @elseif ($data['name'] === "lampslightings")
+                            Lamps/lightings
+                        @elseif ($data['name'] === "wallMirrors")
+                            Wall Mirrors
+                        @elseif ($data['name'] === "pciturearts")
+                            Pictures/Arts
                         @elseif ($data['name'] === "toronto")
                             Toronto Furniture Stores Special Offers
-                        @elseif ($data['name'] === "gta")
-                            GTA  Furniture Stores’ Special OFFERS
+                        {{-- VIP Section --}}
+                        @elseif ($data['name'] === "bedroomSection")
+                            Bedroom Section
+                        @elseif ($data['name'] === "dinigroomSection")
+                            Dining Room Section
+                        @elseif ($data['name'] === "livingroomSection")
+                            Living Room Section
+                        @elseif ($data['name'] === "decorationSection")
+                            Decoration Section
+                        @elseif ($data['name'] === "varietiesSection")
+                            Varieties
                         @else
                             All Products
                         @endif

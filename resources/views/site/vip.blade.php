@@ -40,11 +40,11 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-success" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Bedroom Section </a>
-                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-info" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Dining Room Section </a>
-                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block purple-btn" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Living Room section</a>
-                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-primary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Decoration Sections </a>
-                            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-warning" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Varieties </a>
+                            <a href="{{ route('gallery.show', 'bedroomSection')}}" class="btn btn-lg btn-block btn-success" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Bedroom Section </a>
+                            <a href="{{ route('gallery.show', 'dinigroomSection')}}" class="btn btn-lg btn-block btn-info" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Dining Room Section </a>
+                            <a href="{{ route('gallery.show', 'livingroomSection')}}" class="btn btn-lg btn-block purple-btn" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Living Room section</a>
+                            <a href="{{ route('gallery.show', 'decorationSection')}}" class="btn btn-lg btn-block btn-primary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Decoration Sections </a>
+                            <a href="{{ route('gallery.show', 'varietiesSection')}}" class="btn btn-lg btn-block btn-warning" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Varieties </a>
                         </div>
                     </div>
                 </div>
