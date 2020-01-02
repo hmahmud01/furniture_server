@@ -32,3 +32,5 @@ Route::resource('gallery', 'GalleryController');
 Route::resource('admin', 'AdminController');
 Route::post('adminUpdate', 'GalleryController@demoupadate')->name('galery.update');
 Route::resource('password', 'PasswordController');
+Route::post('passwordUpdate', 'PasswordController@customUpdate')->name('password.update');
+Route::post('redirect', 'PasswordController@redirectPage')->name('password.redirectPage');

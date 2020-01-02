@@ -25,7 +25,7 @@ class PasswordController extends Controller
      */
     public function create()
     {
-        //
+        return view('password.create');
     }
 
     /**
@@ -36,7 +36,16 @@ class PasswordController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if($request->get('password') === $request->get('conf_password')){
+            $password = new Password([
+                'category' => $request->get('category'),
+                'password' => $request->get('password')
+            ]);
+            $password->save();
+            return redirect('/password')->with('success', 'Password Set done');
+        }else{
+            return redirect('/password')->with('error', 'Password Set failed');
+        }
     }
 
     /**
@@ -45,9 +54,20 @@ class PasswordController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id)        
     {
         //
+    }
+
+    public function redirectPage(Request $request){
+        $pass = $request->password;
+        $cat_name = $request->category;
+        $object = Password::where('category', $cat_name)->first();    
+        if($object->password == $pass){
+            return redirect('/furniture-member');
+        }else{
+            return redirect('/categories')->with('error', 'wrong password');
+        }
     }
 
     /**
@@ -58,7 +78,8 @@ class PasswordController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Password::find($id);
+        return view('password.edit', compact('data'));
     }
 
     /**
@@ -68,9 +89,29 @@ class PasswordController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $id = $request->id;
+        if($request->get('password') === $request->get('conf_password')){
+            $password = Password::find($id);
+            $password->password = $request->get('password');            
+            $password->save();
+            return redirect('/password')->with('success', 'Password Update done');
+        }else{
+            return redirect('/password')->with('error', 'Password Update failed');
+        }
+    }
+
+    public function customUpdate(Request $request){
+        $id = $request->id;
+        if($request->get('password') === $request->get('conf_password')){
+            $password = Password::find($id);
+            $password->password = $request->get('password');            
+            $password->save();
+            return redirect('/password')->with('success', 'Password Update done');
+        }else{
+            return redirect('/password')->with('error', 'Password Update failed');
+        }
     }
 
     /**

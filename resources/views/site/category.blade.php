@@ -291,9 +291,9 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <a data-toggle="modal" data-target="#passModal" class="btn btn-lg btn-block btn-primary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Realtors Zone</a>
-                            <a data-toggle="modal" data-target="#passModal" class="btn btn-lg btn-block btn-secondary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Designers Zone</a>
-                            <a data-toggle="modal" data-target="#passModal" class="btn btn-lg btn-block purple-btn" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Agents Zone</a>
+                            <a data-toggle="modal" data-target="#realtorModal" class="btn btn-lg btn-block btn-primary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Realtors Zone</a>
+                            <a data-toggle="modal" data-target="#designerModal" class="btn btn-lg btn-block btn-secondary" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Designers Zone</a>
+                            <a data-toggle="modal" data-target="#agentModal" class="btn btn-lg btn-block purple-btn" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Agents Zone</a>
                         </div>
                     </div>
                 </div>
@@ -309,32 +309,120 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <a data-toggle="modal" data-target="#passModal" class="btn btn-lg btn-block enter-btn-color" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Whole Sellers Network</a>                            
+                            <a data-toggle="modal" data-target="#networkModal" class="btn btn-lg btn-block enter-btn-color" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Whole Sellers Network</a>                            
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <div class="modal fade" id="passModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            {{-- REALTORS ZONE MODAL --}}
+            <div class="modal fade" id="realtorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Password</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
+                        <form method="POST" action="{{ route('password.redirectPage')}}">
+                            {{csrf_field()}}
+                            <input type="hidden" value="realtor" name="category">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Password</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button id="checkPass" type="submit" class="btn btn-primary">Enter</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="modal-body">
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                </div>
+            </div>
+
+            {{-- DESIGNERS ZONE MODAL --}}
+            <div class="modal fade" id="designerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form method="POST" action="{{ route('password.redirectPage')}}">
+                            {{csrf_field()}}
+                            <input type="hidden" value="designer" name="category">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Password</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button id="checkPass" type="submit" class="btn btn-primary">Enter</button>
+                            </div>
+                        </form>
                     </div>
+                </div>
+            </div>
+
+            {{-- AGENTS ZONE MODAL --}}
+            <div class="modal fade" id="agentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form method="POST" action="{{ route('password.redirectPage')}}">
+                            {{csrf_field()}}
+                            <input type="hidden" value="wholeseller" name="category">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Password</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button id="checkPass" type="submit" class="btn btn-primary">Enter</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button id="checkPass" type="button" class="btn btn-primary">Enter</button>
-                    </div>
+                </div>
+            </div>
+
+            {{-- WHOLE SELLERS NETWORK MODAL --}}
+            <div class="modal fade" id="networkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form method="POST" action="{{ route('password.redirectPage')}}">
+                            {{csrf_field()}}
+                            <input type="hidden" value="agent" name="category">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Password</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button id="checkPass" type="submit" class="btn btn-primary">Enter</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -403,7 +491,7 @@
     <script src="{{ asset('assets/js/plugins.js') }}"></script>
     <script src="{{ asset('assets/js/active.js') }}"></script>
 
-    <script>
+    {{-- <script>
         $(document).ready(function(){
             var pass = $("#passwordInput").val();
             $("#checkPass").click(function(){
@@ -411,7 +499,7 @@
                 window.location = "{{ url('/furniture-member') }}";
             });
         });
-    </script>
+    </script> --}}
 
 </body>
 

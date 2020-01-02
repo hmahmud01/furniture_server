@@ -58,8 +58,7 @@ class GalleryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        
+    {        
         $images = gallery::where('cat_name',$id)->get();
         $data = [
             'name'  => $id,
