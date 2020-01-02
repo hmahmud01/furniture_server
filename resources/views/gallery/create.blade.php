@@ -107,8 +107,7 @@
                     <option value="dinigroomSection">Dining Room Section</option>
                     <option value="livingroomSection">Living Room Section</option>
                     <option value="decorationSection">Decoration Section</option>
-                    <option value="varietiesSection">Varieties</option>
-                    
+                    <option value="varietiesSection">Varieties</option>                    
                 </select>
             </div>
             <div class="form-group">
