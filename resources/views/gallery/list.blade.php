@@ -21,7 +21,8 @@
           <td>Category Name</td>
           <td>Image</td>
           <td>Title</td>
-          <td>Actions</td>
+          <td>EDIT</td>
+          <td>REMOVE</td>
         </tr>
     </thead>
     <tbody>

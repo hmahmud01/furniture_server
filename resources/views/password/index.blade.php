@@ -23,7 +23,8 @@
         <tr>
           <td>Category Name</td>
           <td>password</td>
-          <td>Actions</td>
+          <td>EDIT</td>
+          <td>REMOVE</td>
         </tr>
     </thead>
     <tbody>
@@ -34,6 +35,13 @@
             <td>
                 {{-- <a href="{{ route('gallery.edit', $image->id)}}" class="btn btn-primary">Edit</a> --}}
                 <a href="{{ route('password.edit', $data->id)}}" class="btn btn-primary">Edit</a>
+            </td>
+            <td>
+              <form action="{{ route('password.destroy', $data->id)}}" method="post">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-danger" type="submit">Delete</button>
+              </form>
             </td>
         </tr>
         @endforeach

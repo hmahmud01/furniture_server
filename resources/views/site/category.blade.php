@@ -377,7 +377,7 @@
                     <div class="modal-content">
                         <form method="POST" action="{{ route('password.redirectPage')}}">
                             {{csrf_field()}}
-                            <input type="hidden" value="wholeseller" name="category">
+                            <input type="hidden" value="agent" name="category">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Password</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -405,7 +405,7 @@
                     <div class="modal-content">
                         <form method="POST" action="{{ route('password.redirectPage')}}">
                             {{csrf_field()}}
-                            <input type="hidden" value="agent" name="category">
+                            <input type="hidden" value="wholeseller" name="category">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Password</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
