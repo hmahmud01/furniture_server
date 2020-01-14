@@ -29,8 +29,13 @@ Route::get('furniture-member', function(){
 
 
 Route::resource('gallery', 'GalleryController');
-Route::resource('admin', 'AdminController');
-Route::post('adminUpdate', 'GalleryController@demoupadate')->name('galery.update');
-Route::resource('password', 'PasswordController');
-Route::post('passwordUpdate', 'PasswordController@customUpdate')->name('password.update');
-Route::post('redirect', 'PasswordController@redirectPage')->name('password.redirectPage');
+
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('adminpanel', 'AdminController')->middleware('auth');
+Route::post('admin', 'AdminController@index')->middleware('auth');
+Route::post('adminUpdate', 'GalleryController@demoupadate')->name('galery.update')->middleware('auth');;
+Route::resource('password', 'PasswordController')->middleware('auth');;
+Route::post('passwordUpdate', 'PasswordController@customUpdate')->name('password.update')->middleware('auth');;
+Route::post('redirect', 'PasswordController@redirectPage')->name('password.redirectPage')->middleware('auth');;

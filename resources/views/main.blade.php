@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('admin.index')}}">Furniture FM</a>            
+            <a class="navbar-brand" href="{{ route('adminpanel.index')}}">Furniture FM</a>            
             <a class="navbar-brand" href="{{ route('password.index')}}">Passwords</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -30,7 +30,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                    <a href="{{url('/')}}" class="nav-link">Logout</a>
+                        {{-- <a href="{{ route('logout') }}" class="nav-link">Logout</a> --}}
+                        <a class="nav-link" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
                     </li>
                 </ul>
             </div>
