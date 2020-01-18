@@ -47,7 +47,7 @@ class AdminController extends Controller
                     $galary->save();
                 }
             }
-            return redirect('/admin')->with('success', 'category saved!');
+            return redirect('/adminpanel')->with('success', 'category saved!');
     }
 
     /**
@@ -95,6 +95,6 @@ class AdminController extends Controller
         $image = gallery::find($id);
         $image->delete();
 
-        return redirect('/admin')->with('success', 'Image deleted!');
+        return redirect('/adminpanel')->with('success', 'Image deleted!');
     }
 }

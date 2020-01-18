@@ -35,6 +35,8 @@
                             Living Room Section
                         @elseif ($data['name'] === "varieties")
                             Varieties Section
+                        @elseif ($data['name'] === "deal")
+                            Deal Of The Month
                         @elseif ($data['name'] === "gta")
                             GTA
                         @elseif ($data['name'] === "shouthwestern")

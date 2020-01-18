@@ -35,7 +35,7 @@
                 <a href="{{ route('gallery.edit', $image->id)}}" class="btn btn-primary">Edit</a>
             </td>
             <td>                
-                <form action="{{ route('admin.destroy', $image->id)}}" method="post">
+                <form action="{{ route('adminpanel.destroy', $image->id)}}" method="post">
                   @csrf
                   @method('DELETE')
                   <button class="btn btn-danger" type="submit">Delete</button>

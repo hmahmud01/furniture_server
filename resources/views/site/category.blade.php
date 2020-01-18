@@ -64,7 +64,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <a href="{{ route('gallery.index')}}" class="btn btn-lg btn-block enter-btn-color" style="width:100%; margin: 5px 0; height:82px; font-size: xx-large">Deal of the Month</a>
+                    <a href="{{ route('gallery.show', 'deal')}}" class="btn btn-lg btn-block enter-btn-color" style="width:100%; margin: 5px 0; height:82px; font-size: xx-large">Deal of the Month</a>
                 </div>            
             </div>
 
@@ -279,7 +279,7 @@
                 </div>
             </div>
 
-            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-info" style="width:100%; margin: 5px; color: yellow; height: 72px; font-size: xx-large;">TORONTO FURNITURE STORES' SPECIAL OFFERS</a>
+            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-info" style="width:100%; margin: 5px; color: yellow; height: 54px; font-size: larger;">Furniture Liquidations & Clearances</a>
 
             <div class="row" style="margin-top: 32px">
                 <div class="col-md-12 text-center">
