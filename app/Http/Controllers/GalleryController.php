@@ -114,7 +114,7 @@ class GalleryController extends Controller
             $galary->title = $request->title;
             $galary->save();
             
-            return redirect('/gallery')->with('success', 'Image Updated!');
+            return redirect('/adminpanel')->with('success', 'Image Updated!');
         }
     }
 
