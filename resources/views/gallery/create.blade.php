@@ -14,7 +14,7 @@
         </ul>
       </div><br />
     @endif
-      <form  method="post" action="{{ route('admin.store') }}" enctype="multipart/form-data">
+      <form  method="post" action="{{ route('adminpanel.store') }}" enctype="multipart/form-data">
           {{csrf_field()}}
             <div class="form-group">
                 <label for="cat_name">category</label>
@@ -23,6 +23,8 @@
                     <option value="diningroom">diningroom</option>
                     <option value="livingroom">livingroom</option>                
                     <option value="varieties">varieties</option>      
+                    {{-- Deal of the Month --}}
+                    <option value="deal">Deal Of the Month</option>      
                     {{-- canada wide furniture sotres deals to be enlist in category page --}}
                     <option value="gta">GTA</option>
                     <option value="shouthwestern">Southwestern Ontario</option>

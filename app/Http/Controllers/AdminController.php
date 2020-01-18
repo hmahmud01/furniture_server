@@ -47,7 +47,7 @@ class AdminController extends Controller
                     $galary->save();
                 }
             }
-            return redirect('/admin')->with('success', 'category saved!');
+            return redirect('/adminpanel')->with('success', 'category saved!');
     }
 
     /**
