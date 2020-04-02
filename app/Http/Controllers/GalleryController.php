@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\gallery;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Mail;
+
 class GalleryController extends Controller
 {
     /**
@@ -116,6 +118,26 @@ class GalleryController extends Controller
             
             return redirect('/adminpanel')->with('success', 'Image Updated!');
         }
+    }
+
+
+    public function emaildata(Request $request){
+        $username = strstr($request->email, '@', true);
+        $help = "helpfurniturefm@gmail.com";
+        $data = array(
+            'email' => $request->email,
+            'files' => $request->images,      
+            'help' => $help,
+            'user' => $username,
+        );
+        Mail::send('emails.send', $data, function($message) use ($data){
+            $message->to($data['email']);
+            $message->subject('Furniture FM review');
+            $message->from('helpfurniturefm@gmail.com');
+            // $attachments = $data['files'];
+            // $message->attach($data['files'][0]); 
+        });
+        return redirect('/')->with('success', 'Image Updated!');
     }
 
     /**
