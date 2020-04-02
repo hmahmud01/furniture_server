@@ -29,6 +29,8 @@ Route::get('furniture-member', function(){
 
 
 Route::resource('gallery', 'GalleryController');
+// Email url
+Route::post('sendemaildata', 'GalleryController@emaildata')->name('galery.data');
 
 
 Auth::routes();

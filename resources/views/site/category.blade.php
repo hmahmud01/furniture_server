@@ -279,7 +279,7 @@
                 </div>
             </div>
 
-            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-info" style="width:100%; margin: 5px; color: yellow; height: 54px; font-size: larger;">Furniture Liquidations & Clearances</a>
+            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-info" style="width:100%; margin: 5px; color: yellow; height: 54px; font-size: larger;">Furniture Clearances</a>
 
             <div class="row" style="margin-top: 32px">
                 <div class="col-md-12 text-center">
@@ -309,7 +309,7 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <a data-toggle="modal" data-target="#networkModal" class="btn btn-lg btn-block enter-btn-color" style="width:100%; margin: 5px; color: white; height: 72px; font-size: xx-large;">Whole Sellers Network</a>                            
+                            <a data-toggle="modal" data-target="#networkModal" class="btn btn-lg btn-block enter-btn-color" style="width:100%; margin: 5px; color: white; height: 54px; font-size: larger;">Whole Sellers Network</a>                            
                         </div>
                     </div>
                 </div>

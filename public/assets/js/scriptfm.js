@@ -146,6 +146,7 @@ var shoppingCart = (function() {
     var name = $(this).data('name');
     var price = Number($(this).data('price'));
     var img = $(this).data('img');
+    console.log(img);
     shoppingCart.addItemToCart(name, price, 1, img);
     displayCart();
   });
@@ -171,7 +172,8 @@ var shoppingCart = (function() {
         + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
         + " = " 
         // + "<td>" + cartArray[i].total + "</td>" 
-        +  "</tr>";
+        +  "</tr>"
+        +"<input type='hidden' class='form-control' name='images[]" + cartArray[i].name +  "' value='"+ cartArray[i].img + "'>";
     }
     $('.show-cart').html(output);
     $('.total-cart').html(shoppingCart.totalCart());

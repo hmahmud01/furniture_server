@@ -39,14 +39,14 @@
                 </p>
             </div>
             <div class="row">
-                @foreach($images as $image)
+                @foreach($images as $key=>$image)
                     <div class="col-md-3">
                         <div class="card" style="margin: 10px 0;">
                             <a href="{{ asset($image->image) }}"><img src="{{ asset($image->image) }}" class="card-img-top" style="height: 240px;"></a>
                             <div class="card-body">
                                 <h5 class="card-title">{{$image->title}}</h5>
                                 <p>{{$image->cat_name}}</p>
-                                <a href="#" data-name="{{$image->title}}" data-price="0.5" data-img="{{ asset($image->image) }}" class="add-to-cart btn btn-primary">Add to List</a>
+                                <a href="#" data-name="{{$key}}" data-price="0.5" data-img="{{ asset($image->image) }}" class="add-to-cart btn btn-primary">Add to List</a>
                             </div>
                         </div>
                     </div> 
@@ -59,6 +59,8 @@
 <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
+      <form method="POST" action="{{ route('galery.data')}}">
+        {{csrf_field()}}
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -73,8 +75,10 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Review now</button>
+          <button type="submit" class="btn btn-primary">Review now</button>
+          <!-- <a href="{{ route('galery.data')}}" class="btn btn-primary">Review Now</a> -->
         </div>
+        </form>
       </div>
     </div>
   </div>
