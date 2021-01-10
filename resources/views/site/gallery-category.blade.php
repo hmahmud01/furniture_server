@@ -25,7 +25,7 @@
     <section id="gallery">
         <div class="container">
             <div class="row gallery-content">
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <h3>
                         @if ($data['name'] === "bedroom")
                             Bedroom Section
@@ -200,14 +200,16 @@
                         @endif
                     </h3>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Share (<span class="total-count"></span>)</button>
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#share">Cart (<span class="total-count"></span>)</button>
                         <button class="clear-cart btn btn-danger">Clear Cart</button>
                     </div>
                 </div>                
                 <p>
-                    <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> Coupon Flyer Deals are mostly designed with actual photographs of products available at the stores in addition to similar products available at the warehouses. Always check product availability before going to a store by using Coupon CODE (mentioned under the Store’s name). Present <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> Coupon or Coupon CODE once the products are chosen for purchase. <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> also offers special buying assistant services for large buying, complete house furnishing packages, special items, brand products in order to save more, proper product suggestions and pre negotiations with multiple stores for 1% service fee of total purchase amount. Our basic assistant service "Connecting with the Stores" is a free basic consultation service via email only at ➡️"helpfurniturefm@gmail.com"
+                    <!-- <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> Coupon Flyer Deals are mostly designed with actual photographs of products available at the stores in addition to similar products available at the warehouses. Always check product availability before going to a store by using Coupon CODE (mentioned under the Store’s name). Present <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> Coupon or Coupon CODE once the products are chosen for purchase. <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> also offers special buying assistant services for large buying, complete house furnishing packages, special items, brand products in order to save more, proper product suggestions and pre negotiations with multiple stores for 1% service fee of total purchase amount. Our basic assistant service "Connecting with the Stores" is a free basic consultation service via email only at ➡️"helpfurniturefm@gmail.com" -->
+                    <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> is a website that shows mostly actual varieties of Furniture photos. Informations are collected from Various Furniture Dealers. Unlike other websites , <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> helps consumers to see actual furniture options available in Market . Consumers can select their  products  , add to cart and get quotations from actual dealers. Consumers also can refer/recommend to friends and families. <img style="height:16px" src="{{asset('assets/img/home/logo.png')}}" alt="Furniture FM logo" /> is the first furniture information centre based on various furniture stores and brands and their products. Products availability and final prices will be confirmed by authorised Furniture Dealers only.
                 </p>
             </div>
             <div class="row">
@@ -228,35 +230,84 @@
 
     <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <form method="POST" action="{{ route('galery.data')}}">
-            {{csrf_field()}}
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                <table class="show-cart table">                    
-                </table>
-                <div class="form-group row">
-                    <label for="email" class="col-sm-2 col-form-label">Your Email</label>
-                    <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email to send">
+            <div class="modal-content">
+                <form method="POST" action="{{ route('galery.data')}}">
+                {{csrf_field()}}
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                </div>
-                <!-- <div>Total price: $<span class="total-cart"></span></div> -->
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>              
-                <button type="submit" class="btn btn-primary">Review now</button>
-                <!-- <a href="{{ route('galery.data')}}" class="btn btn-primary">Review Now</a> -->
-                </div>
-            </form>
-          </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">                    
+                        </table>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="">
+                            </div>
+                        </div>
+                    <!-- <div>Total price: $<span class="total-cart"></span></div> -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>              
+                        <button type="submit" class="btn btn-primary">Share</button>
+                    <!-- <a href="{{ route('galery.data')}}" class="btn btn-primary">Review Now</a> -->
+                    </div>
+                </form>
+            </div>
         </div>
-      </div>
+    </div>
+
+    <div class="modal fade" id="share" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <!-- <form method="POST" action="{{ route('gallery.emailshare')}}"> -->
+                <form action="">
+                {{csrf_field()}}
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">                    
+                        </table>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email Address</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address">
+                            </div>
+                        </div>                        
+                        <div class="form-group row">
+                            <label for="phone" class="col-sm-2 col-form-label">Phone Number(Optional)</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Your Phone Number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="notes" class="col-sm-2 col-form-label">Notes</label>
+                            <div class="col-sm-10">                                
+                                <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Any Notes if you have..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>              
+                        <button type="submit" class="btn btn-primary">Request for quotation</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="{{ asset('assets/js/jquery/jquery-2.2.4.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>

@@ -134,11 +134,30 @@ class GalleryController extends Controller
             $message->to($data['email']);
             $message->subject('Furniture FM review');
             $message->from('helpfurniturefm@gmail.com');
+        });
+        return redirect('/')->with('success', 'Mail Sent');
+    }
+
+
+    public function emailShare(Request $request){
+        $data = array(
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'notes' => $request->notes,
+            'images' => $request->images,
+        );
+        Mail::send('emails.quotation', $data, function($message) use ($data){
+            $message->to($data['email']);
+            $message->subject('Quotation Request');
+            $message->from('helpfurniturefm@gmail.com');
+        });
+        return redirect('/')->with('success', 'Mail sent');
+    }
+
+
             // $attachments = $data['files'];
             // $message->attach($data['files'][0]); 
-        });
-        return redirect('/')->with('success', 'Image Updated!');
-    }
 
     /**
      * Remove the specified resource from storage.

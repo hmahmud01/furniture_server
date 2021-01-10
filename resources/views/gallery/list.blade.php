@@ -26,7 +26,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($images as $image)
+        @foreach($images->reverse() as $image)
         <tr>
             <td>{{$image->cat_name}}</td>
             <td><img style="height:64px; width:64px;" src="{{ asset($image->image) }}" /></td>

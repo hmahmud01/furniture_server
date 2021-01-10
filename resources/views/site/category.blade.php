@@ -68,7 +68,7 @@
                 </div>            
             </div>
 
-            <div class="row" style="margin-top: 32px">
+            <!-- <div class="row" style="margin-top: 32px">
                 <div class="col-md-12 text-center">
                     <div class="col-md-8 offset-md-2">
                         <div class="cat-head">
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             
 
@@ -279,7 +279,7 @@
                 </div>
             </div>
 
-            <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-info" style="width:100%; margin: 5px; color: yellow; height: 54px; font-size: larger;">Furniture Clearances</a>
+            <!-- <a href="{{ route('gallery.show', 'toronto')}}" class="btn btn-lg btn-block btn-info" style="width:100%; margin: 5px; color: yellow; height: 54px; font-size: larger;">Furniture Clearances</a> -->
 
             <div class="row" style="margin-top: 32px">
                 <div class="col-md-12 text-center">
@@ -299,7 +299,7 @@
                 </div>
             </div>
 
-            <div class="row" style="margin-top: 32px">
+            <!-- <div class="row" style="margin-top: 32px">
                 <div class="col-md-12 text-center">
                     <div class="col-md-6 offset-md-3">
                         <div class="cat-head">
@@ -313,7 +313,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             {{-- REALTORS ZONE MODAL --}}
             <div class="modal fade" id="realtorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
